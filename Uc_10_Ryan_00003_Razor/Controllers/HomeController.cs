@@ -6,14 +6,27 @@ namespace Uc_10_Ryan_00003_Razor.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public IActionResult Index()
         {
-            _logger = logger;
+            return View();
         }
 
-        public IActionResult Index()
+        public IActionResult Index1()
+        {
+            return View();
+        }
+
+        public IActionResult Index2()
+        {
+            return View();
+        }
+
+        public IActionResult NossaHistoria()
+        {
+            return View();
+        }
+
+        public IActionResult Contato()
         {
             return View();
         }
@@ -21,12 +34,6 @@ namespace Uc_10_Ryan_00003_Razor.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
