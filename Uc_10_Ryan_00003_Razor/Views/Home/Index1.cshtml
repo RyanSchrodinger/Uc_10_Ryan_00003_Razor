@@ -1,91 +1,82 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Index1";
 }
 
-<section class="hero-cafe">
+<section class="cabecalho-cafe">
 
-    <div class="conteudo-hero-cafe">
+    <h1>Nosso Cardápio</h1>
 
-        <span>Casa do Café</span>
-
-        <h1>Coffee House</h1>
-
-        <p>
-            Cafés preparados com cuidado para tornar
-            cada momento mais especial.
-        </p>
-
-        <a asp-controller="Home"
-           asp-action="Index1"
-           class="botao-cafe">
-            Conheça nosso cardápio
-        </a>
-
-    </div>
+    <p>
+        Conheça algumas das bebidas disponíveis em nossa cafeteria.
+    </p>
 
 </section>
 
 <section class="secao-cafe">
 
-    <div class="titulo-cafe">
+    <div class="lista-cardapio">
 
-        <h2>Nossos cafés</h2>
-
-        <p>
-            Escolha uma bebida e aproveite uma experiência
-            cheia de sabor e aroma.
-        </p>
-
-    </div>
-
-    <div class="grid-cafes">
-
-        <article class="card-cafe">
+        <article class="item-cardapio">
 
             <img src="~/images/expresso.jpg"
                  alt="Café expresso" />
 
-            <div class="conteudo-card-cafe">
+            <div>
 
-                <h3>Expresso</h3>
+                <span>Café tradicional</span>
+
+                <h2>Expresso</h2>
 
                 <p>
-                    Um café intenso e encorpado para começar o dia.
+                    Café concentrado, intenso e preparado
+                    com grãos selecionados.
                 </p>
+
+                <strong>R$ 7,00</strong>
 
             </div>
 
         </article>
 
-        <article class="card-cafe">
+        <article class="item-cardapio">
 
             <img src="~/images/cappuccino.jpg"
                  alt="Cappuccino" />
 
-            <div class="conteudo-card-cafe">
+            <div>
 
-                <h3>Cappuccino</h3>
+                <span>Café cremoso</span>
+
+                <h2>Cappuccino</h2>
 
                 <p>
-                    Café, leite vaporizado e uma espuma cremosa.
+                    Combinação de café, leite vaporizado
+                    e uma camada cremosa de espuma.
                 </p>
+
+                <strong>R$ 12,00</strong>
 
             </div>
 
         </article>
 
-        <article class="card-cafe">
+        <article class="item-cardapio">
 
             <img src="~/images/latte.jpg"
                  alt="Café latte" />
 
-            <div class="conteudo-card-cafe">
+            <div>
 
-                <h3>Latte</h3>
+                <span>Café com leite</span>
+
+                <h2>Latte</h2>
 
                 <p>
-                    Uma bebida delicada, cremosa e equilibrada.
+                    Café suave preparado com uma quantidade
+                    maior de leite vaporizado.
                 </p>
+
+                <strong>R$ 11,00</strong>
 
             </div>
 
@@ -93,4 +84,14 @@
 
     </div>
 
-</section>0
+    <div class="navegacao-cafe">
+
+        <a asp-controller="Home"
+           asp-action="Index2"
+           class="botao-cafe">
+            Conhecer os tipos de café
+        </a>
+
+    </div>
+
+</section>
