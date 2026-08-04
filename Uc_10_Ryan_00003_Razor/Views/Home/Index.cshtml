@@ -1,53 +1,96 @@
 ﻿@{
-    ViewData["Title"] = "Casa do Café";
+    ViewData["Title"] = "Home";
 }
 
-<section class="hero">
+<section class="hero-cafe">
 
-    <div class="hero-texto">
+    <div class="conteudo-hero-cafe">
+
+        <span>Casa do Café</span>
+
         <h1>Coffee House</h1>
 
-        
+        <p>
+            Cafés preparados com cuidado para tornar
+            cada momento mais especial.
+        </p>
 
-        <div class="cards">
+        <a asp-controller="Home"
+           asp-action="Index1"
+           class="botao-cafe">
+            Conheça nosso cardápio
+        </a>
 
-            <div class="card">
-                <img src="~/imagens/expresso.jpg" alt="Expresso">
+    </div>
+
+</section>
+
+<section class="secao-cafe">
+
+    <div class="titulo-cafe">
+
+        <h2>Nossos cafés</h2>
+
+        <p>
+            Escolha uma bebida e aproveite uma experiência
+            cheia de sabor e aroma.
+        </p>
+
+    </div>
+
+    <div class="grid-cafes">
+
+        <article class="card-cafe">
+
+            <img src="~/images/expresso.jpg"
+                 alt="Café expresso" />
+
+            <div class="conteudo-card-cafe">
 
                 <h3>Expresso</h3>
 
                 <p>
                     Um café intenso e encorpado para começar o dia.
                 </p>
+
             </div>
 
-            <div class="card">
-                <img src="imagens/cappuccino.jpg" alt="Cappuccino">
+        </article>
+
+        <article class="card-cafe">
+
+            <img src="~/images/cappuccino.jpg"
+                 alt="Cappuccino" />
+
+            <div class="conteudo-card-cafe">
 
                 <h3>Cappuccino</h3>
 
                 <p>
-                    Leite vaporizado, espuma cremosa e muito sabor.
+                    Café, leite vaporizado e uma espuma cremosa.
                 </p>
+
             </div>
 
-            <div class="card">
-                <img src="imagens/latte.jpg" alt="Latte">
+        </article>
+
+        <article class="card-cafe">
+
+            <img src="~/images/latte.jpg"
+                 alt="Café latte" />
+
+            <div class="conteudo-card-cafe">
 
                 <h3>Latte</h3>
 
                 <p>
-                    Delicado, cremoso e perfeito para qualquer momento.
+                    Uma bebida delicada, cremosa e equilibrada.
                 </p>
+
             </div>
 
-        </div>
-
-        <a asp-controller="Home" asp-action="Privacy">Conheça nosso cardápio</a>
+        </article>
 
     </div>
 
 </section>
-
-
-
