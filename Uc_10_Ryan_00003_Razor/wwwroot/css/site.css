@@ -1,118 +1,310 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =========================================
+   PROJETO COFFEE HOUSE
+========================================= */
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f7f3ee;
-    color: black;
-}
-
-.hero {
-    height: 85vh;
-    background-size: cover;
-    background-position: center;
+.hero-cafe {
+    min-height: 570px;
+    padding: 80px 20px;
+    background: linear-gradient( rgba(40, 22, 13, 0.72), rgba(40, 22, 13, 0.72) ), url("../images/expresso.jpg") center/cover;
+    color: #ffffff;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.conteudo-hero-cafe {
+    max-width: 700px;
+}
+
+    .conteudo-hero-cafe > span {
+        color: #e0b28a;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .conteudo-hero-cafe h1 {
+        margin: 12px 0;
+        font-size: clamp(45px, 7vw, 75px);
+    }
+
+    .conteudo-hero-cafe p {
+        margin: 0 auto 28px;
+        color: #eeeeee;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+.botao-cafe {
+    min-height: 48px;
+    padding: 0 24px;
+    border-radius: 25px;
+    background: #8a4827;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+    .botao-cafe:hover {
+        background: #68351e;
+        color: #ffffff;
+    }
+
+.secao-cafe {
+    padding: 75px 20px;
+    background: #f7f3ee;
+}
+
+.titulo-cafe {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+    .titulo-cafe h2 {
+        margin-bottom: 12px;
+        color: #482414;
+        font-size: 36px;
+    }
+
+    .titulo-cafe p {
+        color: #666666;
+    }
+
+.grid-cafes {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-cafe {
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(65, 36, 20, 0.12);
+}
+
+    .card-cafe img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+.conteudo-card-cafe {
+    padding: 24px;
+    text-align: center;
+}
+
+    .conteudo-card-cafe h3 {
+        color: #632f17;
+        font-size: 25px;
+    }
+
+    .conteudo-card-cafe p {
+        margin: 10px 0 0;
+        color: #666666;
+        line-height: 1.6;
+    }
+
+.cabecalho-cafe {
+    padding: 75px 20px;
+    background: #3b2115;
+    color: #ffffff;
+    text-align: center;
+}
+
+    .cabecalho-cafe h1 {
+        margin-bottom: 12px;
+        font-size: clamp(38px, 5vw, 55px);
+    }
+
+    .cabecalho-cafe p {
+        max-width: 650px;
+        margin: 0 auto;
+        color: #ded1c9;
+    }
+
+.lista-cardapio {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.item-cardapio {
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    box-shadow: 0 8px 24px rgba(65, 36, 20, 0.1);
+}
+
+    .item-cardapio img {
+        width: 100%;
+        height: 100%;
+        min-height: 220px;
+        object-fit: cover;
+    }
+
+    .item-cardapio div {
+        padding: 28px;
+    }
+
+    .item-cardapio span {
+        color: #a3572f;
+        font-weight: 700;
+    }
+
+    .item-cardapio h2 {
+        margin: 5px 0 12px;
+        color: #482414;
+    }
+
+    .item-cardapio p {
+        color: #666666;
+        line-height: 1.7;
+    }
+
+    .item-cardapio strong {
+        color: #8a4827;
+        font-size: 19px;
+    }
+
+.navegacao-cafe {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.grid-tipos-cafe {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tipo-cafe {
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(65, 36, 20, 0.1);
+}
+
+    .tipo-cafe img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .tipo-cafe div {
+        padding: 25px;
+    }
+
+    .tipo-cafe h2 {
+        color: #482414;
+    }
+
+    .tipo-cafe p {
+        margin: 10px 0 0;
+        color: #666666;
+        line-height: 1.7;
+    }
+
+.historia-cafe {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 55px;
     align-items: center;
 }
 
-.hero-texto {
+    .historia-cafe span {
+        color: #a3572f;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .historia-cafe h2 {
+        margin: 10px 0 18px;
+        color: #482414;
+        font-size: 36px;
+    }
+
+    .historia-cafe p {
+        color: #666666;
+        line-height: 1.8;
+    }
+
+    .historia-cafe img {
+        width: 100%;
+        height: 360px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+.grid-contato-cafe {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card-contato-cafe {
+    padding: 32px;
+    border-radius: 15px;
+    background: #ffffff;
     text-align: center;
-    color: white;
+    box-shadow: 0 8px 25px rgba(65, 36, 20, 0.1);
 }
 
-.hero h1 {
-    color:black;
-    font-size: 4rem;
-    margin-bottom: 20px;
+    .card-contato-cafe > span {
+        font-size: 35px;
+    }
+
+    .card-contato-cafe h2 {
+        margin: 15px 0 10px;
+        color: #482414;
+    }
+
+    .card-contato-cafe p {
+        margin: 0;
+        color: #666666;
+        line-height: 1.7;
+    }
+
+@media (max-width: 800px) {
+
+    .grid-cafes,
+    .grid-tipos-cafe,
+    .grid-contato-cafe {
+        grid-template-columns: 1fr;
+    }
+
+    .historia-cafe {
+        grid-template-columns: 1fr;
+    }
+
+        .historia-cafe img {
+            height: 300px;
+        }
 }
 
-.hero p {
-    width: 650px;
-    max-width: 90%;
-    margin: auto;
-    font-size: 1.2rem;
-    line-height: 1.7;
-}
+@media (max-width: 600px) {
 
-.hero a {
-    display: inline-block;
-    margin-top: 35px;
-    text-decoration: none;
-    background: #7b4a28;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 30px;
-    transition: .3s;
-}
+    .item-cardapio {
+        grid-template-columns: 1fr;
+    }
 
-.hero a:hover {
-    background: #5d351c;
-}
-
-.cafes {
-    padding: 90px 10%;
-}
-
-.cafes h2 {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    color: #5d351c;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 320px;
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,.12);
-    transition: .3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h3 {
-    margin: 20px;
-    color: #5d351c;
-}
-
-.card p {
-    margin: 0 20px 25px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.sobre {
-    
-    padding: 90px 10%;
-    text-align: center;
-}
-.sobre h2 {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-}
-.sobre p {
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.8;
-    font-size: 1.1rem;
+        .item-cardapio img {
+            height: 230px;
+        }
 }
