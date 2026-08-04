@@ -1,6 +1,96 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Home";
 }
+
+<section class="hero-cafe">
+
+    <div class="conteudo-hero-cafe">
+
+        <span>Casa do Café</span>
+
+        <h1>Coffee House</h1>
+
+        <p>
+            Cafés preparados com cuidado para tornar
+            cada momento mais especial.
+        </p>
+
+        <a asp-controller="Home"
+           asp-action="Index1"
+           class="botao-cafe">
+            Conheça nosso cardápio
+        </a>
+
+    </div>
+
+</section>
+
+<section class="secao-cafe">
+
+    <div class="titulo-cafe">
+
+        <h2>Nossos cafés</h2>
+
+        <p>
+            Escolha uma bebida e aproveite uma experiência
+            cheia de sabor e aroma.
+        </p>
+
+    </div>
+
+    <div class="grid-cafes">
+
+        <article class="card-cafe">
+
+            <img src="~/images/expresso.jpg"
+                 alt="Café expresso" />
+
+            <div class="conteudo-card-cafe">
+
+                <h3>Expresso</h3>
+
+                <p>
+                    Um café intenso e encorpado para começar o dia.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card-cafe">
+
+            <img src="~/images/cappuccino.jpg"
+                 alt="Cappuccino" />
+
+            <div class="conteudo-card-cafe">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Café, leite vaporizado e uma espuma cremosa.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card-cafe">
+
+            <img src="~/images/latte.jpg"
+                 alt="Café latte" />
+
+            <div class="conteudo-card-cafe">
+
+                <h3>Latte</h3>
+
+                <p>
+                    Uma bebida delicada, cremosa e equilibrada.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>0
