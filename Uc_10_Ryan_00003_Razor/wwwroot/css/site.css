@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f3ee;
+    color: black;
+}
+
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-texto {
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    color:black;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    width: 650px;
+    max-width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 35px;
+    text-decoration: none;
+    background: #7b4a28;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.hero a:hover {
+    background: #5d351c;
+}
+
+.cafes {
+    padding: 90px 10%;
+}
+
+.cafes h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #5d351c;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 20px;
+    color: #5d351c;
+}
+
+.card p {
+    margin: 0 20px 25px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.sobre {
+    
+    padding: 90px 10%;
+    text-align: center;
+}
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
