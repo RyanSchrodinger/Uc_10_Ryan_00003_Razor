@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Uc_10_Ryan_00003_Razor.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Uc_10_Ryan_00003_RazorContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Uc_10_Ryan_00003_RazorContext") ?? throw new InvalidOperationException("Connection string 'Uc_10_Ryan_00003_RazorContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
